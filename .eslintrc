@@ -1,0 +1,44 @@
+parser: "babel-eslint"
+
+extends: 'airbnb'
+
+env:
+  browser: true
+  node: true
+  es6: true
+
+globals:
+  OPTIMIZED: true
+
+rules:
+  jsx-quotes: [2, 'prefer-single']
+  id-length: 0
+  new-cap: [2, { "capIsNewExceptions": [
+    "List",
+    "Map",
+    "OrderedMap",
+    "Set",
+    "OrderedSet",
+    "Stack",
+    "Range",
+    "Repeat",
+    "Record",
+    "Seq",
+    "KeyedSeq",
+    "IndexedSeq",
+    "SetSeq",
+    "Iterable",
+    "KeyedIterable",
+    "IndexedIterable",
+    "SetIterable",
+    "Collection",
+    "KeyedCollection",
+    "IndexedCollection",
+    "SetCollection"
+    ]
+  }]
+
+ecmaFeatures:
+  jsx: true
+  module: true
+

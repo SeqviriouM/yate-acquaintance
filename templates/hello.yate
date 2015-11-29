@@ -1,0 +1,5 @@
+module 'hello'
+
+match / {
+  <div class="hello-block">Hello world</div>
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Yate",
+  "version": "0.0.0-beta",
+  "description": "yate acquaintance",
+  "main": "main.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "lint-ci": "./node_modules/.bin/eslint --ext .js --ext .jsx app/ server/",
+    "lint": "npm run lint-ci --silent; exit 0;",
+    "csscomb": "./node_modules/.bin/csscomb app/",
+    "csslint": "./node_modules/.bin/csscomb -l app/",
+    "dev": "NODE_ENV=development babel-node main.js",
+    "compile": "node_modules/yate/yate templates/hello.yate > templates/hello.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-eslint": "^4.1.6",
+    "babel-runtime": "^6.2.0",
+    "eslint": "^1.10.2",
+    "eslint-config-airbnb": "^1.0.2"
+  },
+  "dependencies": {
+    "babel": "^6.1.18",
+    "babel-core": "^6.2.1",
+    "yate": "0.0.79"
+  }
+}
